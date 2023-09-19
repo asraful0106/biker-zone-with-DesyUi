@@ -8,11 +8,83 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.6/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- ******************************* -->
+    <!-- Google Font Popins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- ******************************** -->
+    <!-- Custom Color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-btn-color': '#E76F51',
+                        'navbarBgColor': '#264653',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- ******************************* -->
     <title>Bike Pagol</title>
 </head>
 
 <body>
+    <header class="bg-navbarBgColor pb-32">
+        <nav class="lg:mr-32">
+            <div class="navbar bg-base-100 bg-navbarBgColor">
+                <div class="flex-1">
+                    <div class="navbar-start lg:hidden">
+                        <div class="dropdown">
+                            <label tabindex="0" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </label>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content mt-3 z-[1] text-base p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a class="text-white">Home</a></li>
+                                <li><a class="text-white">Shop</a></li>
+                                <li><a class="text-white">News</a></li>
+                                <li><a class="text-white">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-none">
+                    <ul class="menu menu-horizontal px-1 text-base">
+                        <li><a class="text-white hidden lg:block">Home</a></li>
+                        <li><a class="text-white hidden lg:block">Shop</a></li>
+                        <li><a class="text-white hidden lg:block">News</a></li>
+                        <li><a class="text-white hidden lg:block">Contact</a></li>
+                        <a class="btn text-white bg-primary-btn-color lg:ml-16 border-none">Login</a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Main Card -->
+        <div class="hero mt-32">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <img src="images/slider/bike3.png" class="w-max lg:ml-48" />
+                <div>
+                    <p class="py-6">Computer-controlled digital transistorized with electronic advance</p>
+                    <h1 class="text-5xl font-bold text-white">Honda CBR 300R</h1>
+                    <p class="py-6 max-w-xl">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    <button class="btn bg-primary-btn-color border-none text-white">Purchase</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        
+    </main>
+    <footer>
 
+    </footer>
 </body>
 
 </html>
